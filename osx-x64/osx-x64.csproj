@@ -3,6 +3,5 @@
         <PackageId>Zig.Toolset.osx-x64</PackageId>
         <ZigArchiveName>macos-x86_64</ZigArchiveName>
         <ZigArchiveType>tar.xz</ZigArchiveType>
-        <ZigArchiveHash>279f9360b5cb23103f0395dc4d3d0d30626e699b1b4be55e98fd985b62bc6fbe</ZigArchiveHash>
     </PropertyGroup>
 </Project>

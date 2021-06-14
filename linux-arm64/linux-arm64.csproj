@@ -3,6 +3,5 @@
         <PackageId>Zig.Toolset.linux-arm64</PackageId>
         <ZigArchiveName>linux-aarch64</ZigArchiveName>
         <ZigArchiveType>tar.xz</ZigArchiveType>
-        <ZigArchiveHash>ee204ca2c2037952cf3f8b10c609373a08a291efa4af7b3c73be0f2b27720470</ZigArchiveHash>
     </PropertyGroup>
 </Project>

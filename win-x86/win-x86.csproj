@@ -3,6 +3,5 @@
         <PackageId>Zig.Toolset.win-x86</PackageId>
         <ZigArchiveName>windows-i386</ZigArchiveName>
         <ZigArchiveType>zip</ZigArchiveType>
-        <ZigArchiveHash>b6ec9aa6cd6f3872fcb30d43ff411802d82008a0c4142ee49e208a09b2c1c5fe</ZigArchiveHash>
     </PropertyGroup>
 </Project>
