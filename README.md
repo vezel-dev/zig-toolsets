@@ -1,8 +1,8 @@
 # Zig MSBuild Toolsets
 
-This project packs and distributes the Zig compiler and standard library in a
-set of NuGet packages. These packages are mainly used by the
-[Zig MSBuild SDK](https://github.com/alexrp/zig-msbuild-sdk) but can also be
+This project packs and distributes the [Zig](https://ziglang.org) compiler and
+standard library in a set of NuGet packages. These packages are mainly used by
+the [Zig MSBuild SDK](https://github.com/alexrp/zig-msbuild-sdk) but can also be
 used by other projects.
 
 * For every official release of Zig, a set of NuGet packages with the name pattern
@@ -23,4 +23,4 @@ When a new Zig version is released, the process is as follows:
   [this one](https://ziglang.org/download/0.8.0/release-notes.html).
 * Publish the release on GitHub.
 
-Fresh NuGet packages will now be built and published by GitHub Actions.
+Fresh NuGet packages will then be built and published by an automatic workflow.
