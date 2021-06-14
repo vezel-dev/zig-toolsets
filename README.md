@@ -11,3 +11,16 @@ used by other projects.
 * Only the RIDs that are relevant to the .NET ecosystem will be covered (so e.g.
   `Zig.Toolset.linux-riscv64` will not be available).
 * The package version will match the official Zig release's version.
+
+When a new Zig version is released, the process is as follows:
+
+* Update the `Version` property in
+  [`Directory.Build.props`](Directory.Build.props).
+* Commit the change.
+* Tag a release as e.g. `v0.8.0`.
+* Push the commit and the tag.
+* Edit the draft release on GitHub to add a release note link, such as
+  [this one](https://ziglang.org/download/0.8.0/release-notes.html).
+* Publish the release on GitHub.
+
+Fresh NuGet packages will now be built and published by GitHub Actions.
