@@ -25,11 +25,6 @@
                       DestinationFolder="$(BaseIntermediateOutputPath)"
                       Condition="!Exists('$(_ArchivePath)')" />
 
-        <VerifyFileHash File="$(_ArchivePath)"
-                        Algorithm="SHA256"
-                        Hash="$(ZigArchiveHash)"
-                        ContinueOnError="WarnAndContinue" />
-
         <MakeDir Directories="$(BaseOutputPath)" />
 
         <Unzip SourceFiles="$(_ArchivePath)"
