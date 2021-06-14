@@ -1,0 +1,8 @@
+<Project>
+    <PropertyGroup>
+        <ZigToolsetPath>$(MSBuildThisFileDirectory)../tools/</ZigToolsetPath>
+        <ZigExePath>$(ZigToolsetPath)zig</ZigExePath>
+        <ZigDocPath>$(ZigToolsetPath)doc/</ZigDocPath>
+        <ZigLibPath>$(ZigToolsetPath)lib/</ZigLibPath>
+    </PropertyGroup>
+</Project>

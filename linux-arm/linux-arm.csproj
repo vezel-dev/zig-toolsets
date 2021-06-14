@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+    <PropertyGroup>
+        <PackageId>Zig.Toolset.linux-arm</PackageId>
+        <ZigArchiveName>linux-armv7a</ZigArchiveName>
+        <ZigArchiveType>tar.xz</ZigArchiveType>
+        <ZigArchiveHash>d00b8bd97b79f45d6f5da956983bafeaa082e6c2ae8c6e1c6d4faa22fa29b320</ZigArchiveHash>
+    </PropertyGroup>
+</Project>

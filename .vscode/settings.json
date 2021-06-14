@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "**/.idea": true,
+    "**/.vs": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/pkg": true
+  }
+}

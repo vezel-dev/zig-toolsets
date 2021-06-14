@@ -1,0 +1,41 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "Build",
+      "contextType": "build",
+      "appliesTo": "/",
+      "type": "launch",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "-clp:NoSummary",
+        "-p:GenerateFullPaths=true"
+      ]
+    },
+    {
+      "taskLabel": "Pack",
+      "contextType": "custom",
+      "appliesTo": "/",
+      "type": "launch",
+      "command": "dotnet",
+      "args": [
+        "pack",
+        "-clp:NoSummary",
+        "-p:GenerateFullPaths=true"
+      ]
+    },
+    {
+      "taskLabel": "Clean",
+      "contextType": "clean",
+      "appliesTo": "/",
+      "type": "launch",
+      "command": "dotnet",
+      "args": [
+        "clean",
+        "-clp:NoSummary",
+        "-p:GenerateFullPaths=true"
+      ]
+    }
+  ]
+}

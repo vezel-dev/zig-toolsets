@@ -1,0 +1,6 @@
+.idea
+.vs
+*.user
+bin
+obj
+pkg
