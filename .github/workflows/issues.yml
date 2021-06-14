@@ -6,7 +6,7 @@ on:
             - opened
 jobs:
     issues:
-        if: github.repository == 'seiiki-dev/seiiki'
+        if: github.repository == 'alexrp/zig-msbuild-toolsets'
         runs-on: ubuntu-latest
         steps:
             - name: Label issues
