@@ -12,6 +12,7 @@
         <Configuration>Release</Configuration>
         <Copyright>Copyright © $(Authors)</Copyright>
         <DevelopmentDependency>true</DevelopmentDependency>
+        <DisablePackageAssetsCache>true</DisablePackageAssetsCache>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <GenerateAssemblyVersionInfo>false</GenerateAssemblyVersionInfo>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
