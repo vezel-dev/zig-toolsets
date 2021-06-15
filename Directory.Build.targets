@@ -1,38 +1,7 @@
 <Project>
-    <ItemGroup Condition="'$(MSBuildProjectDirectory)' != '$(MSBuildThisFileDirectory)'">
-        <None Include="build/**/*"
-              Pack="true"
-              PackagePath="%(RelativeDir)" />
-        <None Include="bin/$(Configuration)/zig-$(ZigArchiveName)-$(Version)/**/*"
-              Pack="true"
-              PackagePath="tools/%(RecursiveDir)" />
+    <ItemGroup>
         <None Include="$(MSBuildThisFileDirectory)*.md; $(MSBuildThisFileDirectory)zig.png"
               Pack="true"
               PackagePath="" />
     </ItemGroup>
-
-    <Target Name="_RestoreArchive"
-            AfterTargets="_GenerateRestoreProjectPathWalk"
-            Condition="'$(MSBuildProjectDirectory)' != '$(MSBuildThisFileDirectory)'">
-        <PropertyGroup>
-            <_ArchiveBase>zig-$(ZigArchiveName)-$(Version)</_ArchiveBase>
-            <_ArchiveName>$(_ArchiveBase).$(ZigArchiveType)</_ArchiveName>
-            <_ArchivePath>$(OutputPath)$(_ArchiveName)</_ArchivePath>
-            <_ArchiveDestination>$(OutputPath)$(_ArchiveBase)/</_ArchiveDestination>
-        </PropertyGroup>
-
-        <DownloadFile SourceUrl="https://ziglang.org/download/$(Version)/$(_ArchiveName)"
-                      DestinationFolder="$(OutputPath)"
-                      Condition="!Exists('$(_ArchivePath)')" />
-
-        <MakeDir Directories="$(OutputPath)" />
-
-        <Unzip SourceFiles="$(_ArchivePath)"
-               DestinationFolder="$(OutputPath)"
-               Condition="'$(ZigArchiveType)' == 'zip' and !Exists('$(_ArchiveDestination)zig.exe')" />
-
-        <Exec Command="tar xf &quot;../../$(_ArchivePath)&quot;"
-              WorkingDirectory="$(OutputPath)"
-              Condition="'$(ZigArchiveType)' == 'tar.xz' and !Exists('$(_ArchiveDestination)zig')" />
-    </Target>
 </Project>
