@@ -1,38 +1,38 @@
 <Project>
-    <ItemGroup>
-        <None Update="build/**/*"
+    <ItemGroup Condition="'$(MSBuildProjectDirectory)' != '$(MSBuildThisFileDirectory)'">
+        <None Include="build/**/*"
               Pack="true"
-              PackagePath="" />
-        <None Include="bin/zig-$(ZigArchiveName)-$(Version)/**/*"
+              PackagePath="%(RelativeDir)" />
+        <None Include="bin/$(Configuration)/zig-$(ZigArchiveName)-$(Version)/**/*"
               Pack="true"
               PackagePath="tools/%(RecursiveDir)" />
-        <None Include="../*.md;../zig.png"
+        <None Include="$(MSBuildThisFileDirectory)*.md; $(MSBuildThisFileDirectory)zig.png"
               Pack="true"
               PackagePath="" />
     </ItemGroup>
 
     <Target Name="_RestoreArchive"
             AfterTargets="_GenerateRestoreProjectPathWalk"
-            Condition="'$(MSBuildProjectExtension)' == '.csproj'">
+            Condition="'$(MSBuildProjectDirectory)' != '$(MSBuildThisFileDirectory)'">
         <PropertyGroup>
             <_ArchiveBase>zig-$(ZigArchiveName)-$(Version)</_ArchiveBase>
             <_ArchiveName>$(_ArchiveBase).$(ZigArchiveType)</_ArchiveName>
-            <_ArchivePath>$(BaseIntermediateOutputPath)$(_ArchiveName)</_ArchivePath>
-            <_ArchiveDestination>$(BaseOutputPath)$(_ArchiveBase)/</_ArchiveDestination>
+            <_ArchivePath>$(OutputPath)$(_ArchiveName)</_ArchivePath>
+            <_ArchiveDestination>$(OutputPath)$(_ArchiveBase)/</_ArchiveDestination>
         </PropertyGroup>
 
         <DownloadFile SourceUrl="https://ziglang.org/download/$(Version)/$(_ArchiveName)"
-                      DestinationFolder="$(BaseIntermediateOutputPath)"
+                      DestinationFolder="$(OutputPath)"
                       Condition="!Exists('$(_ArchivePath)')" />
 
-        <MakeDir Directories="$(BaseOutputPath)" />
+        <MakeDir Directories="$(OutputPath)" />
 
         <Unzip SourceFiles="$(_ArchivePath)"
-               DestinationFolder="$(BaseOutputPath)"
+               DestinationFolder="$(OutputPath)"
                Condition="'$(ZigArchiveType)' == 'zip' and !Exists('$(_ArchiveDestination)zig.exe')" />
 
-        <Exec Command="tar xf &quot;../$(_ArchivePath)&quot;"
-              WorkingDirectory="$(BaseOutputPath)"
+        <Exec Command="tar xf &quot;../../$(_ArchivePath)&quot;"
+              WorkingDirectory="$(OutputPath)"
               Condition="'$(ZigArchiveType)' == 'tar.xz' and !Exists('$(_ArchiveDestination)zig')" />
     </Target>
 </Project>
