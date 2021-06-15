@@ -9,8 +9,7 @@
       "command": "dotnet",
       "args": [
         "build",
-        "-clp:NoSummary",
-        "-p:GenerateFullPaths=true"
+        "-clp:NoSummary"
       ]
     },
     {
@@ -21,8 +20,7 @@
       "command": "dotnet",
       "args": [
         "pack",
-        "-clp:NoSummary",
-        "-p:GenerateFullPaths=true"
+        "-clp:NoSummary"
       ]
     },
     {
@@ -33,8 +31,7 @@
       "command": "dotnet",
       "args": [
         "clean",
-        "-clp:NoSummary",
-        "-p:GenerateFullPaths=true"
+        "-clp:NoSummary"
       ]
     }
   ]

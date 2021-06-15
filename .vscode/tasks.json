@@ -18,8 +18,7 @@
       "command": "dotnet",
       "args": [
         "build",
-        "-clp:NoSummary",
-        "-p:GenerateFullPaths=true"
+        "-clp:NoSummary"
       ],
       "runOptions": {
         "instanceLimit": 1
@@ -39,8 +38,7 @@
       "command": "dotnet",
       "args": [
         "pack",
-        "-clp:NoSummary",
-        "-p:GenerateFullPaths=true"
+        "-clp:NoSummary"
       ],
       "runOptions": {
         "instanceLimit": 1
@@ -60,8 +58,7 @@
       "command": "dotnet",
       "args": [
         "clean",
-        "-clp:NoSummary",
-        "-p:GenerateFullPaths=true"
+        "-clp:NoSummary"
       ],
       "runOptions": {
         "instanceLimit": 1
