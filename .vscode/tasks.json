@@ -26,26 +26,6 @@
       "problemMatcher": "$msCompile"
     },
     {
-      "label": "Pack",
-      "presentation": {
-        "panel": "dedicated",
-        "reveal": "silent",
-        "revealProblems": "onProblem",
-        "showReuseMessage": false,
-        "clear": true
-      },
-      "type": "process",
-      "command": "dotnet",
-      "args": [
-        "pack",
-        "-clp:NoSummary"
-      ],
-      "runOptions": {
-        "instanceLimit": 1
-      },
-      "problemMatcher": "$msCompile"
-    },
-    {
       "label": "Clean",
       "presentation": {
         "panel": "dedicated",

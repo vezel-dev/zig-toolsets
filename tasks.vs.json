@@ -13,17 +13,6 @@
       ]
     },
     {
-      "taskLabel": "Pack",
-      "contextType": "custom",
-      "appliesTo": "/",
-      "type": "launch",
-      "command": "dotnet",
-      "args": [
-        "pack",
-        "-clp:NoSummary"
-      ]
-    },
-    {
       "taskLabel": "Clean",
       "contextType": "clean",
       "appliesTo": "/",
