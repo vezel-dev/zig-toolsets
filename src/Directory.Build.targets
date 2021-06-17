@@ -1,22 +1,33 @@
 <Project>
+    <PropertyGroup>
+        <BeforePack>_PackToolset</BeforePack>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <_ArchiveBase>zig-$(ZigArchiveName)-$(Version)</_ArchiveBase>
+        <_ArchiveName>$(_ArchiveBase).$(ZigArchiveType)</_ArchiveName>
+        <_ArchivePath>$(OutputPath)$(_ArchiveName)</_ArchivePath>
+        <_ArchiveDestination>$(OutputPath)$(_ArchiveBase)/</_ArchiveDestination>
+    </PropertyGroup>
+
     <ItemGroup>
-        <None Include="build/**/*"
+        <None Include="build/**"
               Pack="true"
-              PackagePath="%(RelativeDir)" />
-        <None Include="bin/$(Configuration)/zig-$(ZigArchiveName)-$(Version)/**/*"
-              Pack="true"
-              PackagePath="tools/%(RecursiveDir)" />
+              PackagePath="%(Identity)" />
     </ItemGroup>
 
+    <ItemGroup>
+        <Zig Include="$(_ArchiveDestination)**" />
+    </ItemGroup>
+
+    <!--
+    TODO: We currently assume that the tar program can extract XZ archives. This
+    is not the case for the tar that ships with Windows. So, this target only
+    really works on Unix systems or in environments that have a proper tar (e.g.
+    Git Bash).
+    -->
     <Target Name="_RestoreArchive"
             AfterTargets="_GenerateRestoreProjectPathWalk">
-        <PropertyGroup>
-            <_ArchiveBase>zig-$(ZigArchiveName)-$(Version)</_ArchiveBase>
-            <_ArchiveName>$(_ArchiveBase).$(ZigArchiveType)</_ArchiveName>
-            <_ArchivePath>$(OutputPath)$(_ArchiveName)</_ArchivePath>
-            <_ArchiveDestination>$(OutputPath)$(_ArchiveBase)/</_ArchiveDestination>
-        </PropertyGroup>
-
         <DownloadFile SourceUrl="https://ziglang.org/download/$(Version)/$(_ArchiveName)"
                       DestinationFolder="$(OutputPath)"
                       Condition="!Exists('$(_ArchivePath)')" />
@@ -30,6 +41,23 @@
         <Exec Command="tar xf &quot;../../$(_ArchivePath)&quot;"
               WorkingDirectory="$(OutputPath)"
               Condition="'$(ZigArchiveType)' == 'tar.xz' and !Exists('$(_ArchiveDestination)zig')" />
+    </Target>
+
+    <!--
+    We need to work around some NuGet weirdness where files without an extension
+    do not get packed properly when using RecursiveDir on its own.
+    -->
+    <Target Name="_PackToolset">
+        <ItemGroup>
+            <None Include="@(Zig)"
+                  Pack="true"
+                  PackagePath="tools/%(RecursiveDir)%(Filename)%(Extension)"
+                  Condition="'%(Extension)' != ''" />
+            <None Include="@(Zig)"
+                  Pack="true"
+                  PackagePath="tools/%(RecursiveDir)"
+                  Condition="'%(Extension)' == ''" />
+        </ItemGroup>
     </Target>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove('$(MSBuildThisFile)', '$(MSBuildThisFileDirectory)..'))" />
