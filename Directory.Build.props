@@ -3,7 +3,9 @@
         <Product>Zig MSBuild Toolsets</Product>
         <Description>The Zig compiler and standard library packaged for use in MSBuild.</Description>
         <Authors>Alex Rønne Petersen, Zig Contributors</Authors>
-        <Version>0.8.0.0</Version>
+        <ZigVersion>0.8.0</ZigVersion>
+        <ToolsetVersion>1</ToolsetVersion>
+        <Version>$(ZigVersion).$(ToolsetVersion)</Version>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -23,7 +25,7 @@
         <PackageOutputPath>$(MSBuildThisFileDirectory)pkg</PackageOutputPath>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageReleaseNotes>https://ziglang.org/download/$(Version)/release-notes.html</PackageReleaseNotes>
+        <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <RepositoryUrl>https://github.com/alexrp/zig-msbuild-toolsets.git</RepositoryUrl>
         <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>

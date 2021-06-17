@@ -4,7 +4,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <_ArchiveBase>zig-$(ZigArchiveName)-$(Version)</_ArchiveBase>
+        <_ArchiveBase>zig-$(ZigArchiveName)-$(ZigVersion)</_ArchiveBase>
         <_ArchiveName>$(_ArchiveBase).$(ZigArchiveType)</_ArchiveName>
         <_ArchivePath>$(OutputPath)$(_ArchiveName)</_ArchivePath>
         <_ArchiveDestination>$(OutputPath)$(_ArchiveBase)/</_ArchiveDestination>
@@ -28,7 +28,7 @@
     -->
     <Target Name="_RestoreArchive"
             AfterTargets="_GenerateRestoreProjectPathWalk">
-        <DownloadFile SourceUrl="https://ziglang.org/download/$(Version)/$(_ArchiveName)"
+        <DownloadFile SourceUrl="https://ziglang.org/download/$(ZigVersion)/$(_ArchiveName)"
                       DestinationFolder="$(OutputPath)"
                       Condition="!Exists('$(_ArchivePath)')" />
 
