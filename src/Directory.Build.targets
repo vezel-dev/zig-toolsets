@@ -1,9 +1,5 @@
 <Project>
     <PropertyGroup>
-        <BeforePack>_PackToolset</BeforePack>
-    </PropertyGroup>
-
-    <PropertyGroup>
         <_ArchiveBase>zig-$(ZigArchiveName)-$(ZigVersion)</_ArchiveBase>
         <_ArchiveName>$(_ArchiveBase).$(ZigArchiveType)</_ArchiveName>
         <_ArchivePath>$(OutputPath)$(_ArchiveName)</_ArchivePath>
@@ -13,11 +9,10 @@
     <ItemGroup>
         <None Include="build/**"
               Pack="true"
-              PackagePath="%(Identity)" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <Zig Include="$(_ArchiveDestination)**" />
+              PackagePath="build" />
+        <None Include="$(_ArchiveDestination)**"
+              Pack="true"
+              PackagePath="tools" />
     </ItemGroup>
 
     <!--
@@ -41,23 +36,6 @@
         <Exec Command="tar xf &quot;../../$(_ArchivePath)&quot;"
               WorkingDirectory="$(OutputPath)"
               Condition="'$(ZigArchiveType)' == 'tar.xz' and !Exists('$(_ArchiveDestination)zig')" />
-    </Target>
-
-    <!--
-    We need to work around some NuGet weirdness where files without an extension
-    do not get packed properly when using RecursiveDir on its own.
-    -->
-    <Target Name="_PackToolset">
-        <ItemGroup>
-            <None Include="@(Zig)"
-                  Pack="true"
-                  PackagePath="tools/%(RecursiveDir)%(Filename)%(Extension)"
-                  Condition="'%(Extension)' != ''" />
-            <None Include="@(Zig)"
-                  Pack="true"
-                  PackagePath="tools/%(RecursiveDir)"
-                  Condition="'%(Extension)' == ''" />
-        </ItemGroup>
     </Target>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove('$(MSBuildThisFile)', '$(MSBuildThisFileDirectory)..'))" />

@@ -4,7 +4,7 @@
         <Description>The Zig compiler and standard library packaged for use in MSBuild.</Description>
         <Authors>Alex Rønne Petersen, Zig Contributors</Authors>
         <ZigVersion>0.8.0</ZigVersion>
-        <ToolsetVersion>1</ToolsetVersion>
+        <ToolsetVersion>2</ToolsetVersion>
         <Version>$(ZigVersion).$(ToolsetVersion)</Version>
     </PropertyGroup>
 
