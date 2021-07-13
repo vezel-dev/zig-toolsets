@@ -4,7 +4,7 @@
         <Description>The Zig compiler and standard library packaged for use in MSBuild.</Description>
         <Authors>Alex Rønne Petersen, Zig Contributors</Authors>
         <ZigVersion>0.8.0</ZigVersion>
-        <ToolsetVersion>3</ToolsetVersion>
+        <ToolsetVersion>4</ToolsetVersion>
         <Version>$(ZigVersion).$(ToolsetVersion)</Version>
     </PropertyGroup>
 
@@ -30,7 +30,7 @@
         <RepositoryUrl>https://github.com/alexrp/zig-msbuild-toolsets.git</RepositoryUrl>
         <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
         <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>netstandard1.0</TargetFramework>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 </Project>
