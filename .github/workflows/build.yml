@@ -34,3 +34,6 @@ jobs:
             - name: Build project
               run: |
                   dotnet build --no-restore
+            - name: Clean project
+              run: |
+                  dotnet clean
