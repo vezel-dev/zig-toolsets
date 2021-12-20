@@ -8,7 +8,7 @@ When a new Zig version is released, the process is as follows:
 * Commit the change.
 * Tag a release as `v$(ZigVersion).$(ToolsetVersion)` (e.g. `v0.8.0.0`).
 * Push the commit and the tag.
-* Edit the draft release on GitHub to add a release note link, such as
+* Edit the draft release on GitHub to add a release notes link, such as
   [this one](https://ziglang.org/download/0.8.0/release-notes.html).
 * Publish the release on GitHub.
 
