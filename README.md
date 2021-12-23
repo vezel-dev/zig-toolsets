@@ -12,3 +12,7 @@ used by other projects.
   `Zig.Toolset.linux-riscv64` will not be available).
 * The package version will match the official Zig release's version, with an
   extra fourth component added indicating the packaging version.
+
+## Statistics
+
+![Repobeats](https://repobeats.axiom.co/api/embed/c54ba3a665be3c1daae5ea6985ff99e11b51c458.svg)
