@@ -3,7 +3,7 @@
         <Product>Zig MSBuild Toolsets</Product>
         <Description>The Zig compiler and standard library packaged for use in MSBuild.</Description>
         <Authors>Alex Rønne Petersen, Zig Contributors</Authors>
-        <ZigVersion>0.9.0</ZigVersion>
+        <ZigVersion>0.9.1</ZigVersion>
         <ToolsetVersion>1</ToolsetVersion>
         <Version>$(ZigVersion).$(ToolsetVersion)</Version>
     </PropertyGroup>
