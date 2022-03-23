@@ -21,7 +21,7 @@
         <IsPublishable>false</IsPublishable>
         <NoDefaultExcludes>true</NoDefaultExcludes>
         <PackageIcon>zig.png</PackageIcon>
-        <PackageLicenseExpression>ISC AND MIT</PackageLicenseExpression>
+        <PackageLicenseExpression>0BSD AND MIT</PackageLicenseExpression>
         <PackageOutputPath>$(MSBuildThisFileDirectory)pkg</PackageOutputPath>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
