@@ -27,7 +27,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <RepositoryUrl>https://github.com/alexrp/zig-msbuild-toolsets.git</RepositoryUrl>
+        <RepositoryUrl>https://github.com/vezel-dev/zig-msbuild-toolsets.git</RepositoryUrl>
         <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
         <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
         <TargetFramework>netstandard1.0</TargetFramework>

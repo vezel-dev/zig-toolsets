@@ -2,7 +2,7 @@
 
 This project packs and distributes the [Zig](https://ziglang.org) compiler and
 standard library in a set of NuGet packages. These packages are mainly used by
-the [Zig MSBuild SDK](https://github.com/alexrp/zig-msbuild-sdk) but can also be
+the [Zig MSBuild SDK](https://github.com/vezel-dev/zig-msbuild-sdk) but can also be
 used by other projects.
 
 * For every official release of Zig, a set of NuGet packages with the name pattern

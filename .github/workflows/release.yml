@@ -13,7 +13,7 @@ env:
     DOTNET_NOLOGO: true
 jobs:
     release:
-        if: github.repository == 'alexrp/zig-msbuild-toolsets'
+        if: github.repository == 'vezel-dev/zig-msbuild-toolsets'
         runs-on: ubuntu-latest
         steps:
             - name: Clone repository
