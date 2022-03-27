@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/github/license/vezel-dev/zig-msbuild-toolsets?color=brown)](LICENSE.md)
+[![License](https://img.shields.io/badge/license-0BSD%20AND%20MIT-brown)](LICENSE.md)
 [![Commits](https://img.shields.io/github/commit-activity/m/vezel-dev/zig-msbuild-toolsets/master?label=commits&color=slateblue)](https://github.com/vezel-dev/zig-msbuild-toolsets/commits/master)
 [![Build](https://img.shields.io/github/workflow/status/vezel-dev/zig-msbuild-toolsets/Build/master)](https://github.com/vezel-dev/zig-msbuild-toolsets/actions/workflows/build.yml)
 
