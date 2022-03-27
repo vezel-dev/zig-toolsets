@@ -33,3 +33,47 @@ be used by other projects.
   `Zig.Toolset.linux-riscv64` will *not* be available).
 * The package version will match the official Zig release's version, with an
   extra fourth component added indicating the packaging version.
+
+## Usage
+
+This project offers the following packages:
+
+| Package | Description | Downloads |
+| -: | - | :- |
+| [![Zig.Toolset.linux-arm][linux-arm-img]][linux-arm-pkg] | Toolset for the `linux-arm` build platform. | ![Downloads][linux-arm-dls] |
+| [![Zig.Toolset.linux-arm64][linux-arm64-img]][linux-arm64-pkg] | Toolset for the `linux-arm64` build platform. | ![Downloads][linux-arm64-dls] |
+| [![Zig.Toolset.linux-x64][linux-x64-img]][linux-x64-pkg] | Toolset for the `linux-x64` build platform. | ![Downloads][linux-x64-dls] |
+| [![Zig.Toolset.osx-arm64][osx-arm64-img]][osx-arm64-pkg] | Toolset for the `osx-arm64` build platform. | ![Downloads][osx-arm64-dls] |
+| [![Zig.Toolset.osx-x64][osx-x64-img]][osx-x64-pkg] | Toolset for the `osx-x64` build platform. | ![Downloads][osx-x64-dls] |
+| [![Zig.Toolset.win-arm64][win-arm64-img]][win-arm64-pkg] | Toolset for the `win-arm64` build platform. | ![Downloads][win-arm64-dls] |
+| [![Zig.Toolset.win-x64][win-x64-img]][win-x64-pkg] | Toolset for the `win-x64` build platform. | ![Downloads][win-x64-dls] |
+| [![Zig.Toolset.win-x86][win-x86-img]][win-x86-pkg] | Toolset for the `win-x86` build platform. | ![Downloads][win-x86-dls] |
+
+[linux-arm-pkg]: https://www.nuget.org/packages/Zig.Toolset.linux-arm
+[linux-arm64-pkg]: https://www.nuget.org/packages/Zig.Toolset.linux-arm64
+[linux-x64-pkg]: https://www.nuget.org/packages/Zig.Toolset.linux-x64
+[osx-arm64-pkg]: https://www.nuget.org/packages/Zig.Toolset.osx-arm64
+[osx-x64-pkg]: https://www.nuget.org/packages/Zig.Toolset.osx-x64
+[win-arm64-pkg]: https://www.nuget.org/packages/Zig.Toolset.win-arm64
+[win-x64-pkg]: https://www.nuget.org/packages/Zig.Toolset.win-x64
+[win-x86-pkg]: https://www.nuget.org/packages/Zig.Toolset.win-x86
+
+[linux-arm-img]: https://img.shields.io/nuget/v/Zig.Toolset.linux-arm?label=Zig.Toolset.linux-arm
+[linux-arm64-img]: https://img.shields.io/nuget/v/Zig.Toolset.linux-arm64?label=Zig.Toolset.linux-arm64
+[linux-x64-img]: https://img.shields.io/nuget/v/Zig.Toolset.linux-x64?label=Zig.Toolset.linux-x64
+[osx-arm64-img]: https://img.shields.io/nuget/v/Zig.Toolset.osx-arm64?label=Zig.Toolset.osx-arm64
+[osx-x64-img]: https://img.shields.io/nuget/v/Zig.Toolset.osx-x64?label=Zig.Toolset.osx-x64
+[win-arm64-img]: https://img.shields.io/nuget/v/Zig.Toolset.win-arm64?label=Zig.Toolset.win-arm64
+[win-x64-img]: https://img.shields.io/nuget/v/Zig.Toolset.win-x64?label=Zig.Toolset.win-x64
+[win-x86-img]: https://img.shields.io/nuget/v/Zig.Toolset.win-x86?label=Zig.Toolset.win-x86
+
+[linux-arm-dls]: https://img.shields.io/nuget/dt/Zig.Toolset.linux-arm?label=
+[linux-arm64-dls]: https://img.shields.io/nuget/dt/Zig.Toolset.linux-arm64?label=
+[linux-x64-dls]: https://img.shields.io/nuget/dt/Zig.Toolset.linux-x64?label=
+[osx-arm64-dls]: https://img.shields.io/nuget/dt/Zig.Toolset.osx-arm64?label=
+[osx-x64-dls]: https://img.shields.io/nuget/dt/Zig.Toolset.osx-x64?label=
+[win-arm64-dls]: https://img.shields.io/nuget/dt/Zig.Toolset.win-arm64?label=
+[win-x64-dls]: https://img.shields.io/nuget/dt/Zig.Toolset.win-x64?label=
+[win-x86-dls]: https://img.shields.io/nuget/dt/Zig.Toolset.win-x86?label=
+
+To install a package, run `dotnet add package <name>`.
