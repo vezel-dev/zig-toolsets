@@ -2,7 +2,7 @@
     <PropertyGroup>
         <ZigToolsetPath>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)../tools'))</ZigToolsetPath>
         <ZigExePath>$([MSBuild]::NormalizePath('$(ZigToolsetPath)zig.exe'))</ZigExePath>
-        <ZigDocPath>$([MSBuild]::NormalizeDirectory('$(ZigToolsetPath)doc'))</ZigDocPath>
         <ZigLibPath>$([MSBuild]::NormalizeDirectory('$(ZigToolsetPath)lib'))</ZigLibPath>
+        <ZigDocPath>$([MSBuild]::NormalizeDirectory('$(ZigToolsetPath)doc'))</ZigDocPath>
     </PropertyGroup>
 </Project>

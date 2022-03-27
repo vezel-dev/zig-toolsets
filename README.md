@@ -77,3 +77,11 @@ This project offers the following packages:
 [win-x86-dls]: https://img.shields.io/nuget/dt/Zig.Toolset.win-x86?label=
 
 To install a package, run `dotnet add package <name>`.
+
+The following MSBuild properties will be injected into your project:
+
+* `ZigToolsetPath`: Path to the extracted toolset package directory in the NuGet
+  package cache.
+* `ZigExePath`: Path to the Zig compiler executable (`zig` or `zig.exe`).
+* `ZigLibPath`: Path to the Zig standard library.
+* `ZigDocPath`: Path to the Zig standard library documentation.
