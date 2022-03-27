@@ -20,7 +20,7 @@ Please respect the following points when posting on the issue tracker:
 
 Issues and/or comments violating these rules may be deleted. Repeated violations
 may lead to
-[interaction limits](https://docs.github.com/en/github/building-a-strong-community/limiting-interactions-in-your-organization)
+[interaction limits](https://docs.github.com/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository)
 being enacted.
 
 ### Labels
@@ -32,7 +32,8 @@ descriptions of each. Here are a few guidelines for how issue labels are to be
 applied:
 
 * An issue should have exactly one `type` and one `state` label.
-    * The `type` label should never change throughout an issue's lifetime.
+    * The `type` label should generally never change throughout an issue's
+      lifetime, mislabeling notwithstanding.
     * The `state` label is expected to change multiple times as the issue
       progresses.
 * An issue should have at least one `area` label.
@@ -46,11 +47,11 @@ applied:
 The ideal bug report is one that is immediately actionable by a person looking
 to resolve it. To that end, a bug report should include:
 
-* The version of the Zig MSBuild Toolset.
+* The version of the Zig toolset being used.
 * Information about host and target platforms (operating system, architecture,
   etc).
 * A self-contained test case that reproduces the issue, along with instructions
-  on building and running it.
+  to trigger the issue.
 * A detailed description of current behavior (including stack traces(s) if
   applicable) and expected behavior.
 
@@ -64,8 +65,8 @@ discussion is necessary due to unexpected factors or sheer complexity.
 Feature requests are welcome, but please note the following:
 
 * Take a moment to consider whether the feature really makes sense for the core
-  project. Many features can live as extension NuGet packages.
-* It is up to you to convince the development team that the feature should be
+  project. Many features can live as community NuGet packages.
+* It is up to you to convince the maintainers that the feature should be
   included. You will need to make a strong case as the bar for new features is
   fairly high.
 * Be as detailed as possible when describing the proposed feature. Explore
@@ -73,9 +74,9 @@ Feature requests are welcome, but please note the following:
   why you believe they are insufficient.
 
 At the end of the day, whether a feature request is accepted is up to the
-development team. There is no guarantee that a feature request will be accepted,
-no matter how well-specified it is. Also, the development team does not commit
-to implementing a feature request when accepting it; acceptance just means that
+maintainers. There is no guarantee that a feature request will be accepted, no
+matter how well-specified it is. Also, the maintainers do not commit to
+implementing a feature request when accepting it; acceptance just means that
 anyone can implement it and submit a pull request in the knowledge that the
 feature is a welcome addition.
 
@@ -86,7 +87,7 @@ great way to contribute, whether it be code or documentation improvements. It is
 a good idea to check the issue tracker to see if someone else is already working
 on something before you start work on it. For feature additions, it is also
 important to open a feature request on the issue tracker to see if the
-development team is actually interested in merging it.
+maintainers are actually interested in merging it.
 
 ### Etiquette
 
@@ -117,14 +118,14 @@ closed due to inactivity, you are always welcome to reopen it if/when you have
 time to address any issues that were brought up on it.
 
 We do our best to review all pull requests in a timely fashion, but since the
-development team has limited time, we may sometimes take a while to review a
-pull request. If your pull request has not received a review for a week or more,
-feel free to ping relevant individuals on the pull request.
+maintainers have limited time, we may sometimes take a while to review a pull
+request. If your pull request has not received a review for a week or more, feel
+free to ping relevant individuals on the pull request.
 
 ### Reommended Process
 
 The first thing you need to do is
-[fork the repository](https://help.github.com/en/articles/fork-a-repo).
+[fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
 Once you have a forked repository, clone and set it up locally:
 
@@ -156,8 +157,8 @@ git checkout -b <branch-name>
 At this point, you can start making changes and committing them. It is good form
 to clean up your commit history to make it easier to review (e.g. if you had to
 do small fixups to a commit, squash them into that commit). See
-[this article](https://help.github.com/en/articles/about-git-rebase) for more
-information.
+[this article](https://docs.github.com/en/get-started/using-git/about-git-rebase)
+for more information.
 
 You may need to rebase your feature branch on top of upstream `master` every now
 and then. Use `git pull --rebase upstream master` as shown above. Please always
