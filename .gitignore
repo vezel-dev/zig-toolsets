@@ -1,6 +1,6 @@
-.idea
 .vs
 *.user
+/pkg/cache/*/*
+/pkg/feed/*.nupkg
 bin
 obj
-pkg

@@ -22,7 +22,7 @@
         <NoDefaultExcludes>true</NoDefaultExcludes>
         <PackageIcon>zig.png</PackageIcon>
         <PackageLicenseExpression>0BSD AND MIT</PackageLicenseExpression>
-        <PackageOutputPath>$(MSBuildThisFileDirectory)pkg</PackageOutputPath>
+        <PackageOutputPath>$(MSBuildThisFileDirectory)pkg/feed</PackageOutputPath>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
