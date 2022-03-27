@@ -1,5 +1,26 @@
 # Zig MSBuild Toolsets
 
+<div align="center">
+    <img src="zig.svg"
+         width="128" />
+</div>
+
+<p align="center">
+    <strong>
+        The Zig compiler and standard library packaged for use in MSBuild.
+    </strong>
+</p>
+
+<div align="center">
+
+[![License](https://img.shields.io/github/license/vezel-dev/zig-msbuild-toolsets?color=brown)](LICENSE.md)
+[![Commits](https://img.shields.io/github/commit-activity/m/vezel-dev/zig-msbuild-toolsets/master?label=commits&color=slateblue)](https://github.com/vezel-dev/zig-msbuild-toolsets/commits/master)
+[![Build](https://img.shields.io/github/workflow/status/vezel-dev/zig-msbuild-toolsets/Build/master)](https://github.com/vezel-dev/zig-msbuild-toolsets/actions/workflows/build.yml)
+
+</div>
+
+---
+
 This project packs and distributes the [Zig](https://ziglang.org) compiler and
 standard library in a set of NuGet packages. These packages are mainly used by
 the [Zig MSBuild SDK](https://github.com/vezel-dev/zig-msbuild-sdk) but can also
