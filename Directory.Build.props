@@ -2,7 +2,8 @@
     <PropertyGroup>
         <Product>Zig MSBuild Toolsets</Product>
         <Description>The Zig compiler and standard library packaged for use in MSBuild.</Description>
-        <Authors>Alex Rønne Petersen, Zig Contributors</Authors>
+        <Authors>The $(Product) Maintainers, Zig Contributors</Authors>
+        <Copyright>Copyright © $(Authors)</Copyright>
         <ZigVersion>0.9.1</ZigVersion>
         <ToolsetVersion>1</ToolsetVersion>
         <Version>$(ZigVersion).$(ToolsetVersion)</Version>
@@ -12,25 +13,19 @@
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
         <Configuration>Release</Configuration>
-        <Copyright>Copyright © $(Authors)</Copyright>
         <DevelopmentDependency>true</DevelopmentDependency>
-        <DisablePackageAssetsCache>true</DisablePackageAssetsCache>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <GenerateAssemblyVersionInfo>false</GenerateAssemblyVersionInfo>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IsPublishable>false</IsPublishable>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <NoDefaultExcludes>true</NoDefaultExcludes>
-        <PackageIcon>zig.png</PackageIcon>
         <PackageLicenseExpression>0BSD AND MIT</PackageLicenseExpression>
         <PackageOutputPath>$(MSBuildThisFileDirectory)pkg/feed</PackageOutputPath>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <RepositoryUrl>https://github.com/vezel-dev/zig-msbuild-toolsets.git</RepositoryUrl>
         <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
-        <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
         <TargetFramework>netstandard1.0</TargetFramework>
-        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 </Project>

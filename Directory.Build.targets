@@ -1,7 +1,33 @@
 <Project>
-    <ItemGroup>
-        <None Include="$(MSBuildThisFileDirectory)*.md; $(MSBuildThisFileDirectory)zig.png"
-              Pack="true"
-              PackagePath="" />
-    </ItemGroup>
+    <Choose>
+        <When Condition="'$(IsPackable)' == 'true'">
+            <PropertyGroup>
+                <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+                <PackageIcon>zig.png</PackageIcon>
+                <PackageReadmeFile>PACKAGE.md</PackageReadmeFile>
+            </PropertyGroup>
+
+            <ItemGroup>
+                <None Include="$(MSBuildThisFileDirectory)PACKAGE.md; $(MSBuildThisFileDirectory)zig.png"
+                      Pack="true"
+                      PackagePath=""
+                      Visible="false" />
+            </ItemGroup>
+        </When>
+    </Choose>
+
+    <!--
+    Get rid of the restored package(s) in the repository's local package cache.
+    This ensures that people will not have to fiddle around with removing these
+    manually when iterating on changes locally.
+    -->
+    <Target Name="_ClearPackageCache"
+            AfterTargets="Clean; Pack"
+            Condition="'$(IsPackable)' == 'true'">
+        <ItemGroup>
+            <_CachedFiles Include="$(NuGetPackageRoot)/$(PackageId.ToLowerInvariant())/**" />
+        </ItemGroup>
+
+        <Delete Files="@(_CachedFiles)" />
+    </Target>
 </Project>
