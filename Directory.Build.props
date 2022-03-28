@@ -13,19 +13,16 @@
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
         <Configuration>Release</Configuration>
-        <DevelopmentDependency>true</DevelopmentDependency>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-        <GenerateAssemblyVersionInfo>false</GenerateAssemblyVersionInfo>
+        <EnablePackageValidation>true</EnablePackageValidation>
+        <IsPackable>false</IsPackable>
         <IsPublishable>false</IsPublishable>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-        <NoDefaultExcludes>true</NoDefaultExcludes>
         <PackageLicenseExpression>0BSD AND MIT</PackageLicenseExpression>
         <PackageOutputPath>$(MSBuildThisFileDirectory)pkg/feed/</PackageOutputPath>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
         <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <RepositoryUrl>https://github.com/vezel-dev/zig-msbuild-toolsets.git</RepositoryUrl>
-        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
-        <TargetFramework>netstandard1.0</TargetFramework>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 </Project>

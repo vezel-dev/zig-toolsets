@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
-        <PackageId>Zig.Toolset.linux-x64</PackageId>
+        <ZigBuildRuntime>linux-x64</ZigBuildRuntime>
         <ZigArchiveName>linux-x86_64</ZigArchiveName>
         <ZigArchiveType>tar.xz</ZigArchiveType>
     </PropertyGroup>

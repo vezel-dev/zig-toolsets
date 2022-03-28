@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
-        <PackageId>Zig.Toolset.osx-arm64</PackageId>
+        <ZigBuildRuntime>osx-arm64</ZigBuildRuntime>
         <ZigArchiveName>macos-aarch64</ZigArchiveName>
         <ZigArchiveType>tar.xz</ZigArchiveType>
     </PropertyGroup>

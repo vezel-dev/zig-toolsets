@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
-        <PackageId>Zig.Toolset.win-x64</PackageId>
+        <ZigBuildRuntime>win-x64</ZigBuildRuntime>
         <ZigArchiveName>windows-x86_64</ZigArchiveName>
         <ZigArchiveType>zip</ZigArchiveType>
     </PropertyGroup>

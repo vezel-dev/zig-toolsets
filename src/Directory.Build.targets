@@ -1,5 +1,9 @@
 <Project>
     <PropertyGroup>
+        <PackageId>Zig.Toolset.$(ZigBuildRuntime)</PackageId>
+    </PropertyGroup>
+
+    <PropertyGroup>
         <_ArchiveBase>zig-$(ZigArchiveName)-$(ZigVersion)</_ArchiveBase>
         <_ArchiveName>$(_ArchiveBase).$(ZigArchiveType)</_ArchiveName>
         <_ArchivePath>$(OutputPath)$(_ArchiveName)</_ArchivePath>

@@ -2,6 +2,10 @@
     <Import Project="$([MSBuild]::GetPathOfFileAbove('$(MSBuildThisFile)', '$(MSBuildThisFileDirectory)..'))" />
 
     <PropertyGroup>
+        <DevelopmentDependency>true</DevelopmentDependency>
         <IsPackable>true</IsPackable>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+        <TargetFramework>netstandard1.0</TargetFramework>
     </PropertyGroup>
 </Project>
