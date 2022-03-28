@@ -2,7 +2,8 @@
     <PropertyGroup>
         <Product>Zig MSBuild Toolsets</Product>
         <Description>The Zig compiler and standard library packaged for use in MSBuild.</Description>
-        <Authors>The $(Product) Maintainers, Zig Contributors</Authors>
+        <Company>Vezel</Company>
+        <Authors>$(Company) Maintainers, Zig Contributors</Authors>
         <Copyright>Copyright © $(Authors)</Copyright>
         <ZigVersion>0.9.1</ZigVersion>
         <ToolsetVersion>1</ToolsetVersion>
