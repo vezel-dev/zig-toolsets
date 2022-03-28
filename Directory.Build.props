@@ -20,7 +20,7 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <NoDefaultExcludes>true</NoDefaultExcludes>
         <PackageLicenseExpression>0BSD AND MIT</PackageLicenseExpression>
-        <PackageOutputPath>$(MSBuildThisFileDirectory)pkg/feed</PackageOutputPath>
+        <PackageOutputPath>$(MSBuildThisFileDirectory)pkg/feed/</PackageOutputPath>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
         <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
