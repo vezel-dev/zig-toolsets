@@ -1,5 +1,8 @@
 <Project>
     <PropertyGroup>
+        <PackageDescription>$(PackageDescription)
+
+This package provides the toolset for the $(ZigBuildRuntime) build platform.</PackageDescription>
         <PackageId>Zig.Toolset.$(ZigBuildRuntime)</PackageId>
     </PropertyGroup>
 

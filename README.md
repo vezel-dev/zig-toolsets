@@ -22,17 +22,18 @@
 ---
 
 This project packs and distributes the [Zig](https://ziglang.org) compiler and
-standard library in a set of NuGet packages. These packages are mainly used by
-the [Zig MSBuild SDK](https://github.com/vezel-dev/zig-msbuild-sdk) but can also
-be used by other projects.
+standard library in a set of NuGet packages for each platform that .NET runs on.
+These packages are mainly used by the
+[Zig MSBuild SDK](https://github.com/vezel-dev/zig-msbuild-sdk) but can also be
+used by other projects.
 
 * For every official release of Zig, a set of NuGet packages with the name
-  pattern `Zig.Toolset.<rid>` will be published, where `<rid>` is replaced with
+  pattern `Zig.Toolset.<rid>` is published, where `<rid>` is replaced with
   `linux-arm64`, `osx-x64`, `win-x86`, etc.
-* Only the RIDs that .NET runs on will be covered (so e.g.
-  `Zig.Toolset.linux-riscv64` will *not* be available).
-* The package version will match the official Zig release's version, with an
-  extra fourth component added indicating the packaging version.
+* Only the RIDs that .NET runs on are covered (so e.g.
+  `Zig.Toolset.linux-riscv64` is *not* available).
+* The package version matches the official Zig release's version, with an extra
+  fourth component added indicating the packaging version.
 
 ## Usage
 
@@ -40,14 +41,14 @@ This project offers the following packages:
 
 | Package | Description | Downloads |
 | -: | - | :- |
-| [![Zig.Toolset.linux-arm][linux-arm-img]][linux-arm-pkg] | Toolset for the `linux-arm` build platform. | ![Downloads][linux-arm-dls] |
-| [![Zig.Toolset.linux-arm64][linux-arm64-img]][linux-arm64-pkg] | Toolset for the `linux-arm64` build platform. | ![Downloads][linux-arm64-dls] |
-| [![Zig.Toolset.linux-x64][linux-x64-img]][linux-x64-pkg] | Toolset for the `linux-x64` build platform. | ![Downloads][linux-x64-dls] |
-| [![Zig.Toolset.osx-arm64][osx-arm64-img]][osx-arm64-pkg] | Toolset for the `osx-arm64` build platform. | ![Downloads][osx-arm64-dls] |
-| [![Zig.Toolset.osx-x64][osx-x64-img]][osx-x64-pkg] | Toolset for the `osx-x64` build platform. | ![Downloads][osx-x64-dls] |
-| [![Zig.Toolset.win-arm64][win-arm64-img]][win-arm64-pkg] | Toolset for the `win-arm64` build platform. | ![Downloads][win-arm64-dls] |
-| [![Zig.Toolset.win-x64][win-x64-img]][win-x64-pkg] | Toolset for the `win-x64` build platform. | ![Downloads][win-x64-dls] |
-| [![Zig.Toolset.win-x86][win-x86-img]][win-x86-pkg] | Toolset for the `win-x86` build platform. | ![Downloads][win-x86-dls] |
+| [![Zig.Toolset.linux-arm][linux-arm-img]][linux-arm-pkg] | Provides the toolset for the `linux-arm` build platform. | ![Downloads][linux-arm-dls] |
+| [![Zig.Toolset.linux-arm64][linux-arm64-img]][linux-arm64-pkg] | Provides the toolset for the `linux-arm64` build platform. | ![Downloads][linux-arm64-dls] |
+| [![Zig.Toolset.linux-x64][linux-x64-img]][linux-x64-pkg] | Provides the toolset for the `linux-x64` build platform. | ![Downloads][linux-x64-dls] |
+| [![Zig.Toolset.osx-arm64][osx-arm64-img]][osx-arm64-pkg] | Provides the toolset for the `osx-arm64` build platform. | ![Downloads][osx-arm64-dls] |
+| [![Zig.Toolset.osx-x64][osx-x64-img]][osx-x64-pkg] | Provides the toolset for the `osx-x64` build platform. | ![Downloads][osx-x64-dls] |
+| [![Zig.Toolset.win-arm64][win-arm64-img]][win-arm64-pkg] | Provides the toolset for the `win-arm64` build platform. | ![Downloads][win-arm64-dls] |
+| [![Zig.Toolset.win-x64][win-x64-img]][win-x64-pkg] | Provides the toolset for the `win-x64` build platform. | ![Downloads][win-x64-dls] |
+| [![Zig.Toolset.win-x86][win-x86-img]][win-x86-pkg] | Provides the toolset for the `win-x86` build platform. | ![Downloads][win-x86-dls] |
 
 [linux-arm-pkg]: https://www.nuget.org/packages/Zig.Toolset.linux-arm
 [linux-arm64-pkg]: https://www.nuget.org/packages/Zig.Toolset.linux-arm64

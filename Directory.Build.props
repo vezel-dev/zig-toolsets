@@ -18,6 +18,11 @@
         <IsPackable>false</IsPackable>
         <IsPublishable>false</IsPublishable>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <PackageDescription>$(Description)
+
+This project packs and distributes the Zig compiler and standard library in a
+set of NuGet packages for each platform that .NET runs on. These packages are
+mainly used by the Zig MSBuild SDK but can also be used by other projects.</PackageDescription>
         <PackageLicenseExpression>0BSD AND MIT</PackageLicenseExpression>
         <PackageOutputPath>$(MSBuildThisFileDirectory)pkg/feed/</PackageOutputPath>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
