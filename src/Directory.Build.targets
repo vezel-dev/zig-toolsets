@@ -3,7 +3,7 @@
         <PackageDescription>$(PackageDescription)
 
 This package provides the toolset for the $(ZigBuildRuntime) build platform.</PackageDescription>
-        <PackageId>Zig.Toolset.$(ZigBuildRuntime)</PackageId>
+        <PackageId>Vezel.Zig.Toolsets.$(ZigBuildRuntime)</PackageId>
     </PropertyGroup>
 
     <PropertyGroup>

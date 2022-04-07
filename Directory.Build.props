@@ -1,12 +1,12 @@
 <Project>
     <PropertyGroup>
-        <Product>Zig MSBuild Toolsets</Product>
+        <Product>Zig Toolsets</Product>
         <Description>The Zig compiler and standard library packaged for use in MSBuild.</Description>
         <Company>Vezel</Company>
-        <Authors>Zig Contributors, $(Company) Maintainers</Authors>
+        <Authors>Zig Contributors, $(Company) Contributors</Authors>
         <Copyright>Copyright © $(Authors)</Copyright>
         <ZigVersion>0.9.1</ZigVersion>
-        <ToolsetVersion>1</ToolsetVersion>
+        <ToolsetVersion>2</ToolsetVersion>
         <Version>$(ZigVersion).$(ToolsetVersion)</Version>
     </PropertyGroup>
 
@@ -22,13 +22,13 @@
 
 This project packs and distributes the Zig compiler and standard library in a
 set of NuGet packages for each platform that .NET runs on. These packages are
-mainly used by the Zig MSBuild SDK but can also be used by other projects.</PackageDescription>
+mainly used by Zig.Sdk but can also be used by other projects.</PackageDescription>
         <PackageLicenseExpression>0BSD AND MIT</PackageLicenseExpression>
         <PackageOutputPath>$(MSBuildThisFileDirectory)pkg/feed/</PackageOutputPath>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
         <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <RepositoryUrl>https://github.com/vezel-dev/zig-msbuild-toolsets.git</RepositoryUrl>
+        <RepositoryUrl>https://github.com/vezel-dev/zig-toolsets.git</RepositoryUrl>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 </Project>

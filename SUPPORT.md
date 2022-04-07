@@ -1,10 +1,10 @@
 # Support
 
 The project has a [GitHub Discussions](https://docs.github.com/en/discussions) forum:
-[![GitHub Discussions](https://img.shields.io/github/discussions/vezel-dev/zig-msbuild-toolsets)](https://github.com/vezel-dev/zig-msbuild-toolsets/discussions)
+[![GitHub Discussions](https://img.shields.io/github/discussions/vezel-dev/zig-toolsets)](https://github.com/vezel-dev/zig-toolsets/discussions)
 
 Please do *not* use the
-[issue tracker](https://github.com/vezel-dev/zig-msbuild-toolsets/issues) for support
+[issue tracker](https://github.com/vezel-dev/zig-toolsets/issues) for support
 requests.
 
 When seeking help, please note the following:
