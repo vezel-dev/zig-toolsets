@@ -25,7 +25,6 @@ jobs:
               uses: actions/setup-dotnet@v2.0.0
             - name: Build project
               run: |
-                  dotnet tool restore
                   dotnet build
             - name: Upload NuGet packages
               run: |
