@@ -32,3 +32,6 @@ This project offers the following packages:
   Provides the toolset for the `win-x64` build platform.
 * [Vezel.Zig.Toolsets.win-x86](https://www.nuget.org/packages/Vezel.Zig.Toolsets.win-x86):
   Provides the toolset for the `win-x86` build platform.
+
+For more information, please visit the
+[project page](https://github.com/vezel-dev/zig-toolsets).
