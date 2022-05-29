@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/badge/license-0BSD%20AND%20MIT-brown)](LICENSE.md)
+[![License](https://img.shields.io/badge/license-0BSD%20AND%20MIT-brown)](LICENSE-0BSD)
 [![Commits](https://img.shields.io/github/commit-activity/m/vezel-dev/zig-toolsets/master?label=commits&color=slateblue)](https://github.com/vezel-dev/zig-toolsets/commits/master)
 [![Build](https://img.shields.io/github/workflow/status/vezel-dev/zig-toolsets/Build/master)](https://github.com/vezel-dev/zig-toolsets/actions/workflows/build.yml)
 [![Discussions](https://img.shields.io/github/discussions/vezel-dev/zig-sdk?color=teal)](https://github.com/vezel-dev/zig-sdk/discussions)
@@ -88,3 +88,14 @@ The following MSBuild properties will be injected into your project:
 * `ZigExePath`: Path to the Zig compiler executable (`zig` or `zig.exe`).
 * `ZigLibPath`: Path to the Zig standard library.
 * `ZigDocPath`: Path to the Zig standard library documentation.
+
+## License
+
+This project is licensed under the terms found in
+[`LICENSE-0BSD`](LICENSE-0BSD).
+
+The Zig compiler and standard library are licensed under the terms found in
+[`LICENSE-MIT`](LICENSE-MIT).
+
+The Zig logo is licensed under the terms found in
+[`LICENSE-CC-BY-SA-4.0`](LICENSE-CC-BY-SA-4.0).
