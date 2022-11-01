@@ -1,5 +1,7 @@
 <Project Sdk="Microsoft.Build.Traversal">
     <ItemGroup>
-        <ProjectReference Include="src/*-*/*.proj" />
+        <!-- TODO: https://github.com/vezel-dev/zig-toolsets/issues/15 -->
+        <ProjectReference Include="src/*-*/*.proj"
+                          Exclude="src/win-x86/win-x86.proj" />
     </ItemGroup>
 </Project>
