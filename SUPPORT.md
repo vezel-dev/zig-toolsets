@@ -3,7 +3,7 @@
 Please use one of the following channels for support requests:
 
 [![Discussions](https://img.shields.io/github/discussions/vezel-dev/zig-toolsets?color=teal)](https://github.com/vezel-dev/zig-toolsets/discussions/categories/questions)
-[![Discord](https://img.shields.io/discord/960716713136095232?color=peru&label=discord)](https://discord.gg/bk5T2s9zFg)
+[![Discord](https://img.shields.io/discord/960716713136095232?color=peru&label=discord)](https://discord.gg/GE88ZrPg8j)
 
 Do *not* use the
 [issue tracker](https://github.com/vezel-dev/zig-toolsets/issues) for support

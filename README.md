@@ -17,7 +17,7 @@
 [![Commits](https://img.shields.io/github/commit-activity/m/vezel-dev/zig-toolsets/master?label=commits&color=slateblue)](https://github.com/vezel-dev/zig-toolsets/commits/master)
 [![Build](https://img.shields.io/github/workflow/status/vezel-dev/zig-toolsets/Build/master)](https://github.com/vezel-dev/zig-toolsets/actions/workflows/build.yml)
 [![Discussions](https://img.shields.io/github/discussions/vezel-dev/zig-sdk?color=teal)](https://github.com/vezel-dev/zig-sdk/discussions)
-[![Discord](https://img.shields.io/discord/960716713136095232?color=peru&label=discord)](https://discord.gg/bk5T2s9zFg)
+[![Discord](https://img.shields.io/discord/960716713136095232?color=peru&label=discord)](https://discord.gg/GE88ZrPg8j)
 
 </div>
 
