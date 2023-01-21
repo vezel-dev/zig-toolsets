@@ -12,7 +12,6 @@
 
     <PropertyGroup>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-        <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
         <Configuration>Release</Configuration>
         <EnablePackageValidation>true</EnablePackageValidation>
         <IsPackable>false</IsPackable>
@@ -27,7 +26,6 @@ mainly used by the Zig SDK but can also be used by other projects.</PackageDescr
         <PackageOutputPath>$(MSBuildThisFileDirectory)pkg/feed/</PackageOutputPath>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
         <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
-        <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <RepositoryUrl>https://github.com/vezel-dev/zig-toolsets.git</RepositoryUrl>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
