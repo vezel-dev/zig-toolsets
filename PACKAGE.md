@@ -10,7 +10,7 @@ projects.
   pattern `Vezel.Zig.Toolsets.<rid>` is published, where `<rid>` is replaced
   with `linux-arm64`, `osx-x64`, `win-x86`, etc.
 * Only the RIDs that .NET runs on are covered (so e.g.
-  `Vezel.Zig.Toolsets.linux-riscv64` is *not* available).
+  `Vezel.Zig.Toolsets.linux-x86` is *not* available).
 * The package version matches the official Zig release's version, with an extra
   fourth component added indicating the packaging version.
 
@@ -22,6 +22,8 @@ This project offers the following packages:
   Provides the toolset for the `linux-arm64` build platform.
 * [Vezel.Zig.Toolsets.linux-ppc64le](https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-ppc64le):
   Provides the toolset for the `linux-ppc64le` build platform.
+* [Vezel.Zig.Toolsets.linux-riscv64](https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-riscv64):
+  Provides the toolset for the `linux-riscv64` build platform.
 * [Vezel.Zig.Toolsets.linux-x64](https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-x64):
   Provides the toolset for the `linux-x64` build platform.
 * [Vezel.Zig.Toolsets.osx-arm64](https://www.nuget.org/packages/Vezel.Zig.Toolsets.osx-arm64):
