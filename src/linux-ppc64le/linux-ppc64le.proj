@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+    <PropertyGroup>
+        <ZigBuildRuntime>linux-ppc64le</ZigBuildRuntime>
+        <ZigArchiveName>linux-powerpc64le</ZigArchiveName>
+        <ZigArchiveType>tar.xz</ZigArchiveType>
+    </PropertyGroup>
+</Project>

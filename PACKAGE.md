@@ -20,6 +20,8 @@ This project offers the following packages:
   Provides the toolset for the `linux-arm` build platform.
 * [Vezel.Zig.Toolsets.linux-arm64](https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-arm64):
   Provides the toolset for the `linux-arm64` build platform.
+* [Vezel.Zig.Toolsets.linux-ppc64le](https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-ppc64le):
+  Provides the toolset for the `linux-ppc64le` build platform.
 * [Vezel.Zig.Toolsets.linux-x64](https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-x64):
   Provides the toolset for the `linux-x64` build platform.
 * [Vezel.Zig.Toolsets.osx-arm64](https://www.nuget.org/packages/Vezel.Zig.Toolsets.osx-arm64):

@@ -45,6 +45,7 @@ This project offers the following packages:
 | -: | - | :- |
 | [![Vezel.Zig.Toolsets.linux-arm][linux-arm-img]][linux-arm-pkg] | Provides the toolset for the `linux-arm` build platform. | ![Downloads][linux-arm-dls] |
 | [![Vezel.Zig.Toolsets.linux-arm64][linux-arm64-img]][linux-arm64-pkg] | Provides the toolset for the `linux-arm64` build platform. | ![Downloads][linux-arm64-dls] |
+| [![Vezel.Zig.Toolsets.linux-ppc64le][linux-ppc64le-img]][linux-ppc64le-pkg] | Provides the toolset for the `linux-ppc64le` build platform. | ![Downloads][linux-ppc64le-dls] |
 | [![Vezel.Zig.Toolsets.linux-x64][linux-x64-img]][linux-x64-pkg] | Provides the toolset for the `linux-x64` build platform. | ![Downloads][linux-x64-dls] |
 | [![Vezel.Zig.Toolsets.osx-arm64][osx-arm64-img]][osx-arm64-pkg] | Provides the toolset for the `osx-arm64` build platform. | ![Downloads][osx-arm64-dls] |
 | [![Vezel.Zig.Toolsets.osx-x64][osx-x64-img]][osx-x64-pkg] | Provides the toolset for the `osx-x64` build platform. | ![Downloads][osx-x64-dls] |
@@ -54,6 +55,7 @@ This project offers the following packages:
 
 [linux-arm-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-arm
 [linux-arm64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-arm64
+[linux-ppc64le-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-ppc64le
 [linux-x64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-x64
 [osx-arm64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.osx-arm64
 [osx-x64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.osx-x64
@@ -63,6 +65,7 @@ This project offers the following packages:
 
 [linux-arm-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.linux-arm?label=Vezel.Zig.Toolsets.linux-arm
 [linux-arm64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.linux-arm64?label=Vezel.Zig.Toolsets.linux-arm64
+[linux-ppc64le-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.linux-ppc64le?label=Vezel.Zig.Toolsets.linux-ppc64le
 [linux-x64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.linux-x64?label=Vezel.Zig.Toolsets.linux-x64
 [osx-arm64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.osx-arm64?label=Vezel.Zig.Toolsets.osx-arm64
 [osx-x64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.osx-x64?label=Vezel.Zig.Toolsets.osx-x64
@@ -72,6 +75,7 @@ This project offers the following packages:
 
 [linux-arm-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.linux-arm?label=
 [linux-arm64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.linux-arm64?label=
+[linux-ppc64le-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.linux-ppc64le?label=
 [linux-x64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.linux-x64?label=
 [osx-arm64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.osx-arm64?label=
 [osx-x64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.osx-x64?label=
