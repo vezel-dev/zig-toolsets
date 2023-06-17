@@ -34,8 +34,6 @@ This package provides the toolset for the $(ZigBuildRuntime) build platform.</Pa
                       DestinationFolder="$(OutputPath)"
                       Condition="!Exists('$(_ArchivePath)')" />
 
-        <MakeDir Directories="$(OutputPath)" />
-
         <Unzip SourceFiles="$(_ArchivePath)"
                DestinationFolder="$(OutputPath)"
                Condition="'$(ZigArchiveType)' == 'zip' and !Exists('$(_ArchiveDestination)zig.exe')" />
