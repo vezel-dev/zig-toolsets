@@ -11,6 +11,7 @@ This package provides the toolset for the $(ZigBuildRuntime) build platform.</Pa
         <_ArchiveName>$(_ArchiveBase).$(ZigArchiveType)</_ArchiveName>
         <_ArchivePath>$(OutputPath)$(_ArchiveName)</_ArchivePath>
         <_ArchiveDestination>$(OutputPath)$(_ArchiveBase)/</_ArchiveDestination>
+        <_ArchiveStamp>$(OutputPath)$(_ArchiveBase).stamp</_ArchiveStamp>
     </PropertyGroup>
 
     <ItemGroup>
@@ -36,11 +37,14 @@ This package provides the toolset for the $(ZigBuildRuntime) build platform.</Pa
 
         <Unzip SourceFiles="$(_ArchivePath)"
                DestinationFolder="$(OutputPath)"
-               Condition="'$(ZigArchiveType)' == 'zip' and !Exists('$(_ArchiveDestination)zig.exe')" />
+               Condition="'$(ZigArchiveType)' == 'zip' and !Exists('$(_ArchiveStamp)')" />
 
         <Exec Command="tar xf &quot;../../$(_ArchivePath)&quot;"
               WorkingDirectory="$(OutputPath)"
-              Condition="'$(ZigArchiveType)' == 'tar.xz' and !Exists('$(_ArchiveDestination)zig')" />
+              Condition="'$(ZigArchiveType)' == 'tar.xz' and !Exists('$(_ArchiveStamp)')" />
+
+        <Touch Files="$(_ArchiveStamp)"
+               AlwaysCreate="true" />
     </Target>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove('$(MSBuildThisFile)', '$(MSBuildThisFileDirectory)..'))" />
