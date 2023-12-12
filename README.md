@@ -2,7 +2,8 @@
 
 <div align="center">
     <img src="zig.svg"
-         width="128" />
+         width="128"
+         alt="Zig Toolsets" />
 </div>
 
 <p align="center">
@@ -96,6 +97,11 @@ The following MSBuild properties will be injected into your project:
 * `ZigExePath`: Path to the Zig compiler executable (`zig` or `zig.exe`).
 * `ZigLibPath`: Path to the Zig standard library.
 * `ZigDocPath`: Path to the Zig standard library documentation.
+
+## Building
+
+Simply run `./cake` (a [Bash](https://www.gnu.org/software/bash) script) to
+build artifacts.
 
 ## License
 

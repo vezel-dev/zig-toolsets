@@ -39,7 +39,7 @@ This package provides the toolset for the $(ZigBuildRuntime) build platform.</Pa
                DestinationFolder="$(OutputPath)"
                Condition="'$(ZigArchiveType)' == 'zip' and !Exists('$(_ArchiveStamp)')" />
 
-        <Exec Command="tar xf &quot;../../$(_ArchivePath)&quot;"
+        <Exec Command="tar xf $(_ArchiveName)"
               WorkingDirectory="$(OutputPath)"
               Condition="'$(ZigArchiveType)' == 'tar.xz' and !Exists('$(_ArchiveStamp)')" />
 
