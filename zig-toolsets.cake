@@ -14,11 +14,10 @@ var root = Context.Environment.WorkingDirectory;
 var zigToolsetsProj = root.CombineWithFilePath("zig-toolsets.proj");
 var @out = root.Combine("out");
 var outLog = @out.Combine("log");
-var outPkg = @out.Combine("pkg");
 
 // Globs
 
-var nugetGlob = new GlobPattern(outPkg.Combine("release").CombineWithFilePath("*.nupkg").FullPath);
+var nugetGlob = new GlobPattern(@out.Combine("pkg").Combine("release").CombineWithFilePath("*.nupkg").FullPath);
 
 // Utilities
 
