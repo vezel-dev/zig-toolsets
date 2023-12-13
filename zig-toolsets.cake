@@ -93,13 +93,16 @@ Task("upload")
     .WithCriteria(BuildSystem.GitHubActions.Environment.Workflow.Ref.StartsWith("refs/tags/v"))
     .IsDependentOn("pack")
     .Does(() =>
-        DotNetNuGetPush(
-            nugetGlob.Pattern,
-            new()
-            {
-                Source = "https://api.nuget.org/v3/index.json",
-                ApiKey = nugetToken,
-                SkipDuplicate = true,
-            }));
+    {
+        foreach (var pkg in GetFiles(nugetGlob))
+            DotNetNuGetPush(
+                pkg,
+                new()
+                {
+                    Source = "https://api.nuget.org/v3/index.json",
+                    ApiKey = nugetToken,
+                    SkipDuplicate = true,
+                });
+    });
 
 RunTarget(target);
