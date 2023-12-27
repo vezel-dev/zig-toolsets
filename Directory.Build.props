@@ -16,7 +16,6 @@
         <IsPackable>false</IsPackable>
         <IsPublishable>false</IsPublishable>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-        <PackRelease>false</PackRelease>
         <PackageDescription>$(Description)
 
 This project packs and distributes the Zig compiler and standard library in a
@@ -25,7 +24,6 @@ mainly used by the Zig SDK but can also be used by other projects.</PackageDescr
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
         <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
-        <PublishRelease>false</PublishRelease>
         <RepositoryUrl>https://github.com/vezel-dev/zig-toolsets.git</RepositoryUrl>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
