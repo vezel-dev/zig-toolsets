@@ -103,6 +103,11 @@ The following MSBuild properties will be injected into your project:
 Simply run `./cake` (a [Bash](https://www.gnu.org/software/bash) script) to
 build artifacts.
 
+Note that, on Windows, you must have a `tar` program capable of extracting
+`.tar.xz` archives. For example, `tar` from
+[Git for Windows](https://gitforwindows.org) or [MSYS2](https://www.msys2.org)
+will satisfy this requirement.
+
 ## License
 
 This project is licensed under the terms found in
