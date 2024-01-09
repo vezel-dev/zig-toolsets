@@ -100,8 +100,8 @@ The following MSBuild properties will be injected into your project:
 
 ## Building
 
-Simply run `./cake` (a [Bash](https://www.gnu.org/software/bash) script) to
-build artifacts.
+You will need the .NET SDK installed. Simply run `./cake`
+(a [Bash](https://www.gnu.org/software/bash) script) to build artifacts.
 
 Note that, on Windows, you must have a `tar` program capable of extracting
 `.tar.xz` archives. For example, `tar` from
