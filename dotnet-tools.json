@@ -7,6 +7,12 @@
       "commands": [
         "dotnet-cake"
       ]
+    },
+    "dotnet-file": {
+      "version": "1.4.1",
+      "commands": [
+        "dotnet-file"
+      ]
     }
   }
 }
