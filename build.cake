@@ -57,6 +57,9 @@ DotNetMSBuildSettings ConfigureMSBuild(string target)
 Task("default")
     .IsDependentOn("pack");
 
+Task("default-editor")
+    .IsDependentOn("pack");
+
 Task("restore")
     .Does(() =>
         DotNetRestore(
