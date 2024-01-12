@@ -55,7 +55,6 @@ DotNetMSBuildSettings ConfigureMSBuild(string target)
 // Tasks
 
 Task("default")
-    .IsDependentOn("build")
     .IsDependentOn("pack");
 
 Task("restore")
