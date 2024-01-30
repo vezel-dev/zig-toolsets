@@ -1,6 +1,6 @@
 <Project>
     <PropertyGroup>
-        <PackageDescription>$(PackageDescription)
+        <PackageDescription>$(Description)
 
 This package provides the toolset for the $(ZigBuildRuntime) build platform.</PackageDescription>
         <PackageId>Vezel.Zig.Toolsets.$(ZigBuildRuntime)</PackageId>
