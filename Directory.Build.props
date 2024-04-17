@@ -16,8 +16,10 @@
         <IsPackable>false</IsPackable>
         <IsPublishable>false</IsPublishable>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <PackageIcon>zig.png</PackageIcon>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://ziglang.org</PackageProjectUrl>
+        <PackageReadmeFile>PACKAGE.md</PackageReadmeFile>
         <PackageReleaseNotes>https://ziglang.org/download/$(ZigVersion)/release-notes.html</PackageReleaseNotes>
         <RepositoryUrl>https://github.com/vezel-dev/zig-toolsets.git</RepositoryUrl>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>

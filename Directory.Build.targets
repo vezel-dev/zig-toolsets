@@ -1,19 +1,10 @@
 <Project>
-    <Choose>
-        <When Condition="'$(IsPackable)' == 'true'">
-            <PropertyGroup>
-                <PackageIcon>zig.png</PackageIcon>
-                <PackageReadmeFile>PACKAGE.md</PackageReadmeFile>
-            </PropertyGroup>
-
-            <ItemGroup>
-                <None Include="$(MSBuildThisFileDirectory)PACKAGE.md; $(MSBuildThisFileDirectory)zig.png"
-                      Pack="true"
-                      PackagePath=""
-                      Visible="false" />
-            </ItemGroup>
-        </When>
-    </Choose>
+    <ItemGroup Condition="'$(IsPackable)' == 'true'">
+        <None Include="$(MSBuildThisFileDirectory)PACKAGE.md; $(MSBuildThisFileDirectory)zig.png"
+              Pack="true"
+              PackagePath=""
+              Visible="false" />
+    </ItemGroup>
 
     <!--
     Get rid of the restored package(s) in the repository's local package cache.
