@@ -31,7 +31,7 @@ jobs:
                   ./cake upload
             - name: Upload artifacts
               if: always()
-              uses: actions/upload-artifact@v4.3.2
+              uses: actions/upload-artifact@v4.3.3
               with:
                   name: ${{ github.workflow }}-${{ github.run_number }}-${{ github.run_attempt }}
                   path: |
