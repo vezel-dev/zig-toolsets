@@ -19,6 +19,7 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/vezel-dev/zig-toolsets/build.yml?branch=master)](https://github.com/vezel-dev/zig-toolsets/actions/workflows/build.yml)
 [![Discussions](https://img.shields.io/github/discussions/vezel-dev/zig-sdk?color=teal)](https://github.com/vezel-dev/zig-sdk/discussions)
 [![Discord](https://img.shields.io/discord/960716713136095232?color=peru&label=discord)](https://discord.gg/GE88ZrPg8j)
+[![Zulip](https://img.shields.io/badge/zulip-chat-7289da?logo=zulip)](https://vezel.zulipchat.com)
 
 </div>
 
