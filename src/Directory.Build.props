@@ -5,6 +5,10 @@
         <DevelopmentDependency>true</DevelopmentDependency>
         <IsPackable>true</IsPackable>
         <NoDefaultExcludes>true</NoDefaultExcludes>
+        <NoWarn>
+            $(NoWarn);
+            NETSDK1215
+        </NoWarn>
         <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
         <TargetFramework>netstandard1.0</TargetFramework>
     </PropertyGroup>
