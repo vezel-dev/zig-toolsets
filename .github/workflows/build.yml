@@ -17,38 +17,38 @@ env:
   DOTNET_NOLOGO: true
 jobs:
   build:
-      strategy:
-        fail-fast: false
-        matrix:
-          os:
-            - macos-13
-            - macos-14
-            - macos-15
-            - ubuntu-20.04
-            - ubuntu-22.04
-            - ubuntu-22.04-arm
-            - ubuntu-24.04
-            - ubuntu-24.04-arm
-            - windows-2019
-            - windows-2022
-            - windows-2025
-      runs-on: ${{ matrix.os }}
-      steps:
-        - name: Clone repository
-          uses: actions/checkout@v4.2.2
-          with:
-            fetch-depth: 0
-            submodules: recursive
-        - name: Set up .NET
-          uses: actions/setup-dotnet@v4.2.0
-        - name: Run Cake
-          run: |
-            ./cake
-        - name: Upload artifacts
-          if: always()
-          uses: actions/upload-artifact@v4.6.0
-          with:
-            name: ${{ github.workflow }}-${{ github.run_number }}-${{ github.run_attempt }}-${{ matrix.os }}
-            path: |
-              out/log
-              out/pkg
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - macos-13
+          - macos-14
+          - macos-15
+          - ubuntu-20.04
+          - ubuntu-22.04
+          - ubuntu-22.04-arm
+          - ubuntu-24.04
+          - ubuntu-24.04-arm
+          - windows-2019
+          - windows-2022
+          - windows-2025
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          submodules: recursive
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4.2.0
+      - name: Run Cake
+        run: |
+          ./cake
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: ${{ github.workflow }}-${{ github.run_number }}-${{ github.run_attempt }}-${{ matrix.os }}
+          path: |
+            out/log
+            out/pkg
