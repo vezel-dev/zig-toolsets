@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+    <PropertyGroup>
+        <ZigBuildRuntime>linux-loongarch64</ZigBuildRuntime>
+        <ZigArchiveName>loongarch64-linux</ZigArchiveName>
+        <ZigArchiveType>tar.xz</ZigArchiveType>
+    </PropertyGroup>
+</Project>
