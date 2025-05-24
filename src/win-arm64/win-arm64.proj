@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
         <ZigBuildRuntime>win-arm64</ZigBuildRuntime>
-        <ZigArchiveName>windows-aarch64</ZigArchiveName>
+        <ZigArchiveName>aarch64-windows</ZigArchiveName>
         <ZigArchiveType>zip</ZigArchiveType>
     </PropertyGroup>
 </Project>

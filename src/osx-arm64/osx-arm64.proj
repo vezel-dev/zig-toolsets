@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
         <ZigBuildRuntime>osx-arm64</ZigBuildRuntime>
-        <ZigArchiveName>macos-aarch64</ZigArchiveName>
+        <ZigArchiveName>aarch64-macos</ZigArchiveName>
         <ZigArchiveType>tar.xz</ZigArchiveType>
     </PropertyGroup>
 </Project>

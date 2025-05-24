@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
         <ZigBuildRuntime>win-x86</ZigBuildRuntime>
-        <ZigArchiveName>windows-x86</ZigArchiveName>
+        <ZigArchiveName>x86-windows</ZigArchiveName>
         <ZigArchiveType>zip</ZigArchiveType>
     </PropertyGroup>
 </Project>

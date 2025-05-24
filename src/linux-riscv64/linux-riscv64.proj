@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
         <ZigBuildRuntime>linux-riscv64</ZigBuildRuntime>
-        <ZigArchiveName>linux-riscv64</ZigArchiveName>
+        <ZigArchiveName>riscv64-linux</ZigArchiveName>
         <ZigArchiveType>tar.xz</ZigArchiveType>
     </PropertyGroup>
 </Project>
