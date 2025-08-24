@@ -1,0 +1,8 @@
+<Project>
+    <PropertyGroup>
+        <ZigToolsetPath>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)../tools'))</ZigToolsetPath>
+        <ZigExePath>$([MSBuild]::NormalizePath('$(ZigToolsetPath)zig'))</ZigExePath>
+        <ZigLibPath>$([MSBuild]::NormalizeDirectory('$(ZigToolsetPath)lib'))</ZigLibPath>
+        <ZigDocPath>$([MSBuild]::NormalizeDirectory('$(ZigToolsetPath)doc'))</ZigDocPath>
+    </PropertyGroup>
+</Project>
