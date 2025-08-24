@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+    <PropertyGroup>
+        <ZigBuildRuntime>freebsd-x64</ZigBuildRuntime>
+        <ZigArchiveName>x86_64-freebsd</ZigArchiveName>
+        <ZigArchiveType>tar.xz</ZigArchiveType>
+    </PropertyGroup>
+</Project>
