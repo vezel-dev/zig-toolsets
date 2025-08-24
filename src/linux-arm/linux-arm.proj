@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
         <ZigBuildRuntime>linux-arm</ZigBuildRuntime>
-        <ZigArchiveName>armv7a-linux</ZigArchiveName>
+        <ZigArchiveName>arm-linux</ZigArchiveName>
         <ZigArchiveType>tar.xz</ZigArchiveType>
     </PropertyGroup>
 </Project>
