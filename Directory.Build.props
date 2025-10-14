@@ -5,7 +5,7 @@
         <Company>Vezel</Company>
         <Authors>Zig Contributors, $(Company) Contributors</Authors>
         <Copyright>Copyright © $(Authors)</Copyright>
-        <ZigVersion>0.15.1</ZigVersion>
+        <ZigVersion>0.15.2</ZigVersion>
         <ToolsetVersion>1</ToolsetVersion>
         <Version>$(ZigVersion).$(ToolsetVersion)</Version>
     </PropertyGroup>
