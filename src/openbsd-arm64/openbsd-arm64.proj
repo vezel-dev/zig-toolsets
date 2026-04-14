@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+    <PropertyGroup>
+        <ZigBuildRuntime>openbsd-arm64</ZigBuildRuntime>
+        <ZigArchiveName>aarch64-openbsd</ZigArchiveName>
+        <ZigArchiveType>tar.xz</ZigArchiveType>
+    </PropertyGroup>
+</Project>
