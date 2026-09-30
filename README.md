@@ -44,44 +44,60 @@ This project offers the following packages:
 
 | Package | Description | Downloads |
 | -: | - | :- |
+| [![Vezel.Zig.Toolsets.freebsd-arm64][freebsd-arm64-img]][freebsd-arm64-pkg] | Provides the toolset for the `freebsd-arm64` build platform. | ![Downloads][freebsd-arm64-dls] |
+| [![Vezel.Zig.Toolsets.freebsd-x64][freebsd-x64-img]][freebsd-x64-pkg] | Provides the toolset for the `freebsd-x64` build platform. | ![Downloads][freebsd-x64-dls] |
 | [![Vezel.Zig.Toolsets.linux-arm][linux-arm-img]][linux-arm-pkg] | Provides the toolset for the `linux-arm` build platform. | ![Downloads][linux-arm-dls] |
 | [![Vezel.Zig.Toolsets.linux-arm64][linux-arm64-img]][linux-arm64-pkg] | Provides the toolset for the `linux-arm64` build platform. | ![Downloads][linux-arm64-dls] |
 | [![Vezel.Zig.Toolsets.linux-ppc64le][linux-ppc64le-img]][linux-ppc64le-pkg] | Provides the toolset for the `linux-ppc64le` build platform. | ![Downloads][linux-ppc64le-dls] |
 | [![Vezel.Zig.Toolsets.linux-riscv64][linux-riscv64-img]][linux-riscv64-pkg] | Provides the toolset for the `linux-riscv64` build platform. | ![Downloads][linux-riscv64-dls] |
 | [![Vezel.Zig.Toolsets.linux-x64][linux-x64-img]][linux-x64-pkg] | Provides the toolset for the `linux-x64` build platform. | ![Downloads][linux-x64-dls] |
+| [![Vezel.Zig.Toolsets.openbsd-arm64][openbsd-arm64-img]][openbsd-arm64-pkg] | Provides the toolset for the `openbsd-arm64` build platform. | ![Downloads][openbsd-arm64-dls] |
+| [![Vezel.Zig.Toolsets.openbsd-x64][openbsd-x64-img]][openbsd-x64-pkg] | Provides the toolset for the `openbsd-x64` build platform. | ![Downloads][openbsd-x64-dls] |
 | [![Vezel.Zig.Toolsets.osx-arm64][osx-arm64-img]][osx-arm64-pkg] | Provides the toolset for the `osx-arm64` build platform. | ![Downloads][osx-arm64-dls] |
 | [![Vezel.Zig.Toolsets.osx-x64][osx-x64-img]][osx-x64-pkg] | Provides the toolset for the `osx-x64` build platform. | ![Downloads][osx-x64-dls] |
 | [![Vezel.Zig.Toolsets.win-arm64][win-arm64-img]][win-arm64-pkg] | Provides the toolset for the `win-arm64` build platform. | ![Downloads][win-arm64-dls] |
 | [![Vezel.Zig.Toolsets.win-x64][win-x64-img]][win-x64-pkg] | Provides the toolset for the `win-x64` build platform. | ![Downloads][win-x64-dls] |
 | [![Vezel.Zig.Toolsets.win-x86][win-x86-img]][win-x86-pkg] | Provides the toolset for the `win-x86` build platform. | ![Downloads][win-x86-dls] |
 
+[freebsd-arm64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.freebsd-arm64
+[freebsd-x64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.freebsd-x64
 [linux-arm-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-arm
 [linux-arm64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-arm64
 [linux-ppc64le-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-ppc64le
 [linux-riscv64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-riscv64
 [linux-x64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.linux-x64
+[openbsd-arm64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.openbsd-arm64
+[openbsd-x64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.openbsd-x64
 [osx-arm64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.osx-arm64
 [osx-x64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.osx-x64
 [win-arm64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.win-arm64
 [win-x64-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.win-x64
 [win-x86-pkg]: https://www.nuget.org/packages/Vezel.Zig.Toolsets.win-x86
 
+[freebsd-arm64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.freebsd-arm64?label=Vezel.Zig.Toolsets.freebsd-arm64
+[freebsd-x64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.freebsd-x64?label=Vezel.Zig.Toolsets.freebsd-x64
 [linux-arm-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.linux-arm?label=Vezel.Zig.Toolsets.linux-arm
 [linux-arm64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.linux-arm64?label=Vezel.Zig.Toolsets.linux-arm64
 [linux-ppc64le-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.linux-ppc64le?label=Vezel.Zig.Toolsets.linux-ppc64le
 [linux-riscv64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.linux-riscv64?label=Vezel.Zig.Toolsets.linux-riscv64
 [linux-x64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.linux-x64?label=Vezel.Zig.Toolsets.linux-x64
+[openbsd-arm64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.openbsd-arm64?label=Vezel.Zig.Toolsets.openbsd-arm64
+[openbsd-x64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.openbsd-x64?label=Vezel.Zig.Toolsets.openbsd-x64
 [osx-arm64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.osx-arm64?label=Vezel.Zig.Toolsets.osx-arm64
 [osx-x64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.osx-x64?label=Vezel.Zig.Toolsets.osx-x64
 [win-arm64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.win-arm64?label=Vezel.Zig.Toolsets.win-arm64
 [win-x64-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.win-x64?label=Vezel.Zig.Toolsets.win-x64
 [win-x86-img]: https://img.shields.io/nuget/v/Vezel.Zig.Toolsets.win-x86?label=Vezel.Zig.Toolsets.win-x86
 
+[freebsd-arm64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.freebsd-arm64?label=
+[freebsd-x64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.freebsd-x64?label=
 [linux-arm-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.linux-arm?label=
 [linux-arm64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.linux-arm64?label=
 [linux-ppc64le-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.linux-ppc64le?label=
 [linux-riscv64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.linux-riscv64?label=
 [linux-x64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.linux-x64?label=
+[openbsd-arm64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.openbsd-arm64?label=
+[openbsd-x64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.openbsd-x64?label=
 [osx-arm64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.osx-arm64?label=
 [osx-x64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.osx-x64?label=
 [win-arm64-dls]: https://img.shields.io/nuget/dt/Vezel.Zig.Toolsets.win-arm64?label=
